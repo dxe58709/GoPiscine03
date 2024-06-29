@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.go                                            :+:      :+:    :+:   */
+/*   firstrune.go                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsakanou <nsakanou@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/29 16:09:02 by nsakanou          #+#    #+#             */
-/*   Updated: 2024/06/29 16:18:05 by nsakanou         ###   ########.fr       */
+/*   Created: 2024/06/29 16:08:57 by nsakanou          #+#    #+#             */
+/*   Updated: 2024/06/29 16:15:15 by nsakanou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-package main
+package piscine
 
-import (
-	"ft"
-	"piscine"
-)
-
-func main() {
-	ft.PrintRune(piscine.FirstRune("Hello!"))
-	ft.PrintRune(piscine.FirstRune("Salut!"))
-	ft.PrintRune(piscine.FirstRune("Ola!"))
-	ft.PrintRune('\n')
+func FirstRune(s string) rune {
+	if s != "" {
+		return []rune(s)[0]
+	} else {
+		return 0
+	}
 }
